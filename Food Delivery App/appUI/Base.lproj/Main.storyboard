@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -26,14 +26,14 @@
             <objects>
                 <viewController storyboardIdentifier="SplashViewController" id="BYZ-38-t0r" customClass="SplashViewController" customModule="Food_Delivery_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-background" translatesAutoresizingMaskIntoConstraints="NO" id="LhK-zx-YkP">
-                                <rect key="frame" x="0.0" y="-8.3333333333333144" width="390" height="860.66666666666652"/>
+                                <rect key="frame" x="0.0" y="-9.3333333333333144" width="428" height="944.66666666666652"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main-logo" translatesAutoresizingMaskIntoConstraints="NO" id="10M-Re-eGn">
-                                <rect key="frame" x="97.666666666666686" y="324.66666666666669" width="195" height="195.00000000000006"/>
+                                <rect key="frame" x="107" y="356" width="214" height="214"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="10M-Re-eGn" secondAttribute="height" multiplier="1:1" id="Suz-u7-7Df"/>
                                 </constraints>
@@ -62,24 +62,24 @@
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="4uv-Jn-fEb" customClass="HomeViewController" customModule="Food_Delivery_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wXk-US-nTM">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7c-Rk-ctn">
-                                <rect key="frame" x="0.0" y="-8.3333333333333144" width="390" height="860.66666666666652"/>
+                                <rect key="frame" x="0.0" y="-9.3333333333333144" width="428" height="944.66666666666652"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLB-hG-c2S">
-                                        <rect key="frame" x="0.0" y="-39" width="390" height="938.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="-42.333333333333314" width="428" height="1029.3333333333333"/>
                                         <subviews>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrV-kc-0oV">
-                                                <rect key="frame" x="0.0" y="0.0" width="390" height="938.66666666666663"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="428" height="1029.3333333333333"/>
                                                 <subviews>
                                                     <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZC-vk-Cd1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="390" height="559.66666666666663"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="428" height="614"/>
                                                         <color key="backgroundColor" name="background_light_gray"/>
                                                     </scrollView>
                                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hem-Wh-DFP">
-                                                        <rect key="frame" x="0.0" y="459.66666666666663" width="390" height="40"/>
+                                                        <rect key="frame" x="0.0" y="514" width="428" height="40"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="XyL-OQ-uws"/>
@@ -88,13 +88,13 @@
                                                         <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </pageControl>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4I-U0-tv4" customClass="RoundCornersView" customModule="Food_Delivery_App" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="509.66666666666663" width="390" height="539.99999999999989"/>
+                                                        <rect key="frame" x="0.0" y="564" width="428" height="548.66666666666652"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYn-OD-bqB">
-                                                                <rect key="frame" x="0.0" y="0.0" width="390" height="94"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="428" height="102.66666666666667"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhJ-a7-IZ8">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="130" height="94"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="142.66666666666666" height="102.66666666666667"/>
                                                                         <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="30"/>
                                                                         <state key="normal" title="Pizza">
                                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -104,7 +104,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYQ-5c-Vbz">
-                                                                        <rect key="frame" x="130" y="0.0" width="129.66666666666663" height="94"/>
+                                                                        <rect key="frame" x="142.66666666666663" y="0.0" width="142.33333333333337" height="102.66666666666667"/>
                                                                         <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="30"/>
                                                                         <state key="normal" title="Pasta">
                                                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -114,7 +114,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Rk-dR-lQC">
-                                                                        <rect key="frame" x="260" y="0.0" width="130" height="94"/>
+                                                                        <rect key="frame" x="285.33333333333331" y="0.0" width="142.66666666666669" height="102.66666666666667"/>
                                                                         <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="30"/>
                                                                         <state key="normal" title="Sides">
                                                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -142,14 +142,14 @@
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FILTERS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPH-GD-rQ7">
-                                                                <rect key="frame" x="30" y="94.000000000000057" width="46" height="14"/>
+                                                                <rect key="frame" x="30" y="102.66666666666663" width="46" height="14"/>
                                                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1v-xw-fZc" customClass="CustomButton" customModule="Food_Delivery_App" customModuleProvider="target">
-                                                                <rect key="frame" x="91" y="88.000000000000057" width="30" height="26"/>
+                                                                <rect key="frame" x="91" y="96.666666666666629" width="30" height="26"/>
                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                                                 <state key="normal" title="Spicy">
                                                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -186,7 +186,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCe-a8-59N" customClass="CustomButton" customModule="Food_Delivery_App" customModuleProvider="target">
-                                                                <rect key="frame" x="136" y="88.000000000000057" width="34" height="26"/>
+                                                                <rect key="frame" x="136" y="96.666666666666629" width="34" height="26"/>
                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                                                 <state key="normal" title="Vegan">
                                                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -223,7 +223,7 @@
                                                                 </connections>
                                                             </button>
                                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tjf-mv-5jn">
-                                                                <rect key="frame" x="29.333333333333343" y="128.00000000000006" width="331.33333333333326" height="411.99999999999994"/>
+                                                                <rect key="frame" x="32" y="136.66666666666663" width="364" height="412"/>
                                                                 <color key="backgroundColor" name="background-light-gray"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="412" id="HVN-lc-Iwa"/>
@@ -231,14 +231,14 @@
                                                                 <color key="separatorColor" name="background-light-gray"/>
                                                                 <prototypes>
                                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="gNp-XK-e80" customClass="ItemTVCell" customModule="Food_Delivery_App" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="24.333333969116211" width="331.33333333333326" height="424"/>
+                                                                        <rect key="frame" x="0.0" y="24.333333969116211" width="364" height="448.33334350585938"/>
                                                                         <autoresizingMask key="autoresizingMask"/>
                                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gNp-XK-e80" id="bdA-zO-lF9">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="331.33333333333326" height="424"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="364" height="448.33334350585938"/>
                                                                             <autoresizingMask key="autoresizingMask"/>
                                                                             <subviews>
                                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cu9-jh-djH" customClass="RoundCornersImageView" customModule="Food_Delivery_App" customModuleProvider="target">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="331.33333333333331" height="248.66666666666666"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="364" height="273"/>
                                                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="width" secondItem="cu9-jh-djH" secondAttribute="height" multiplier="1:0.75" id="fYK-RE-Hv4"/>
@@ -252,23 +252,23 @@
                                                                                     </userDefinedRuntimeAttributes>
                                                                                 </imageView>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lst-5n-AnG">
-                                                                                    <rect key="frame" x="0.0" y="364" width="331.33333333333331" height="60"/>
+                                                                                    <rect key="frame" x="0.0" y="388.33333333333331" width="364" height="60"/>
                                                                                     <color key="backgroundColor" name="background-light-gray"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="60" id="USD-8D-kHD"/>
                                                                                     </constraints>
                                                                                 </view>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdE-YB-ZGn" customClass="RoundCornersView" customModule="Food_Delivery_App" customModuleProvider="target">
-                                                                                    <rect key="frame" x="0.0" y="248.66666666666663" width="331.33333333333331" height="145.33333333333337"/>
+                                                                                    <rect key="frame" x="0.0" y="273" width="364" height="145.33333333333337"/>
                                                                                     <subviews>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deluxe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOM-ae-jwi">
-                                                                                            <rect key="frame" x="20" y="20.000000000000028" width="77" height="29.333333333333329"/>
+                                                                                            <rect key="frame" x="20" y="20" width="77" height="29.333333333333329"/>
                                                                                             <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="25"/>
                                                                                             <nil key="textColor"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ztD-nM-TxL" customClass="RoundCornersView" customModule="Food_Delivery_App" customModuleProvider="target">
-                                                                                            <rect key="frame" x="107" y="32.666666666666657" width="10" height="10"/>
+                                                                                            <rect key="frame" x="107" y="32.666666666666686" width="10" height="10"/>
                                                                                             <color key="backgroundColor" name="primary-red"/>
                                                                                             <constraints>
                                                                                                 <constraint firstAttribute="width" constant="10" id="Abp-I5-Ij6"/>
@@ -279,13 +279,13 @@
                                                                                             </userDefinedRuntimeAttributes>
                                                                                         </view>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Chicken, ham, mutton, chicken sausage, Bacon, salami &amp; mozzarella." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30w-rY-PwF">
-                                                                                            <rect key="frame" x="20" y="59.333333333333343" width="291.33333333333331" height="28"/>
+                                                                                            <rect key="frame" x="20" y="59.333333333333314" width="324" height="28"/>
                                                                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsW-kk-TRz" customClass="CustomButton" customModule="Food_Delivery_App" customModuleProvider="target">
-                                                                                            <rect key="frame" x="255.33333333333337" y="97.333333333333343" width="56" height="28"/>
+                                                                                            <rect key="frame" x="288" y="97.333333333333314" width="56" height="28"/>
                                                                                             <color key="backgroundColor" systemColor="labelColor"/>
                                                                                             <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="13"/>
                                                                                             <state key="normal" title="50.0 USD">
@@ -323,7 +323,7 @@
                                                                                             </connections>
                                                                                         </button>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="150 grams, 35 cm" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4t-Kf-ZiH">
-                                                                                            <rect key="frame" x="20.000000000000014" y="103.33333333333334" width="225.33333333333337" height="16.333333333333329"/>
+                                                                                            <rect key="frame" x="20" y="103.33333333333331" width="258" height="16.333333333333329"/>
                                                                                             <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                             <nil key="highlightedColor"/>
@@ -425,7 +425,7 @@
                                                 </constraints>
                                             </scrollView>
                                             <button hidden="YES" opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0u-IZ-1AI" customClass="CustomButton" customModule="Food_Delivery_App" customModuleProvider="target">
-                                                <rect key="frame" x="310" y="787.33333333333337" width="60" height="60"/>
+                                                <rect key="frame" x="348" y="873.66666666666663" width="60" height="60"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="a0u-IZ-1AI" secondAttribute="height" multiplier="1:1" id="RMH-CJ-Wp8"/>
@@ -461,7 +461,7 @@
                                                 </connections>
                                             </button>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyA-V2-9Ev" customClass="CustomLabel" customModule="Food_Delivery_App" customModuleProvider="target">
-                                                <rect key="frame" x="350" y="787.33333333333337" width="20" height="20"/>
+                                                <rect key="frame" x="388" y="873.66666666666663" width="20" height="20"/>
                                                 <color key="backgroundColor" name="primary-green"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="RyA-V2-9Ev" secondAttribute="height" multiplier="1:1" id="617-WH-HPB"/>
@@ -534,11 +534,11 @@
             <objects>
                 <viewController storyboardIdentifier="CartViewController" id="tMx-25-JOh" customClass="CartViewController" customModule="Food_Delivery_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tKd-bJ-KYH">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjK-DV-t21">
-                                <rect key="frame" x="0.0" y="54" width="390" height="30"/>
+                                <rect key="frame" x="0.0" y="54" width="428" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIh-Vh-8pk">
                                         <rect key="frame" x="20" y="0.0" width="30" height="30"/>
@@ -573,7 +573,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="R8W-za-jv4">
-                                <rect key="frame" x="20" y="84" width="350" height="67.666666666666686"/>
+                                <rect key="frame" x="20" y="84" width="388" height="74"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ksg-1D-GkA">
                                     <size key="itemSize" width="128" height="128"/>
@@ -583,7 +583,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cartCVCell" id="MJe-PN-ySf" customClass="CartSectionCVCell" customModule="Food_Delivery_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="-30" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="-27" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Xd5-1t-Ynh">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -610,24 +610,24 @@
                                 </cells>
                             </collectionView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvy-bx-5S5">
-                                <rect key="frame" x="20" y="151.66666666666669" width="350" height="658.33333333333326"/>
+                                <rect key="frame" x="20" y="158" width="388" height="734"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5X9-ec-rlh">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="300"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="300"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="Qyg-QW-5dd"/>
                                         </constraints>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartTVCell" rowHeight="80" id="nTn-pz-oxU" customClass="CartItemTVCell" customModule="Food_Delivery_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="24.333333969116211" width="350" height="80"/>
+                                                <rect key="frame" x="0.0" y="24.333333969116211" width="388" height="80"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nTn-pz-oxU" id="5Ig-el-XsY">
-                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="80"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="388" height="80"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3yK-OL-7KI">
-                                                            <rect key="frame" x="0.0" y="0.0" width="350" height="80"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="388" height="80"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uN6-dY-Bhk">
                                                                     <rect key="frame" x="0.0" y="8" width="64" height="64"/>
@@ -654,13 +654,13 @@
                                                                     </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="Label Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csW-tW-EHM">
-                                                                    <rect key="frame" x="73.999999999999986" y="32.333333333333336" width="138.66666666666663" height="15.333333333333336"/>
+                                                                    <rect key="frame" x="73.999999999999986" y="32.333333333333336" width="176.66666666666663" height="15.333333333333336"/>
                                                                     <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="13"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPw-Zc-geB" customClass="CustomButton" customModule="Food_Delivery_App" customModuleProvider="target">
-                                                                    <rect key="frame" x="310" y="30" width="20" height="20"/>
+                                                                    <rect key="frame" x="348" y="30" width="20" height="20"/>
                                                                     <color key="backgroundColor" name="background-light-gray"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="LPw-Zc-geB" secondAttribute="height" multiplier="1:1" id="Cux-hF-yqi"/>
@@ -675,7 +675,7 @@
                                                                     </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mub-7X-IZq">
-                                                                    <rect key="frame" x="232.66666666666666" y="32.333333333333336" width="67.333333333333343" height="15.333333333333336"/>
+                                                                    <rect key="frame" x="270.66666666666669" y="32.333333333333336" width="67.333333333333314" height="15.333333333333336"/>
                                                                     <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="13"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -697,7 +697,7 @@
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6F-94-9sr">
-                                                            <rect key="frame" x="0.0" y="80" width="350" height="0.0"/>
+                                                            <rect key="frame" x="0.0" y="80" width="388" height="0.0"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" id="yNs-ei-Kph"/>
@@ -722,16 +722,16 @@
                                         </prototypes>
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovl-AF-I4S">
-                                        <rect key="frame" x="0.0" y="300" width="350" height="95.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="300" width="388" height="95.333333333333314"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery is Free" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRl-1h-vyl">
-                                                <rect key="frame" x="0.0" y="20" width="350" height="17.666666666666671"/>
+                                                <rect key="frame" x="0.0" y="20" width="388" height="17.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="15"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="161 USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9LZ-ZW-WwI">
-                                                <rect key="frame" x="52.333333333333321" y="47.666666666666629" width="112.66666666666669" height="32.666666666666657"/>
+                                                <rect key="frame" x="52.333333333333321" y="47.666666666666686" width="112.66666666666669" height="32.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="28"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -770,7 +770,7 @@
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZN-LM-QVz" customClass="CustomButton" customModule="Food_Delivery_App" customModuleProvider="target">
-                                <rect key="frame" x="310" y="740" width="60" height="60"/>
+                                <rect key="frame" x="348" y="822" width="60" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="cDm-8o-hdy"/>

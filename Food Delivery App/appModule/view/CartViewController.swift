@@ -33,15 +33,11 @@ class CartViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Set the scroll view delegate to view controller
-        scrollView.delegate = self
-        
+
+        scrollView.delegate = self        
         collectionView.delegate = self
 
         tableView.rowHeight = itemHeight
-        
-//        selectFirstItem = true
         
         bindTableView(itemArray: self.cartItems)
         self.dataDidChange()

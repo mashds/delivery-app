@@ -47,7 +47,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set the scroll view's delegate to view controller
         scroll_view.delegate = self
         scrollView.delegate = self
         
@@ -269,7 +268,6 @@ extension HomeViewController {
             
             let imageView = UIImageView()
             imageView.frame = CGRect(x: i * Int(self.view.frame.width) , y: 0 , width: Int(self.view.frame.size.width) , height: Int(self.scroll_view.frame.height))
-
             imageView.clipsToBounds = true
             imageView.contentMode = UIView.ContentMode.scaleAspectFill
             imageView.alpha = 0.8
@@ -284,79 +282,19 @@ extension HomeViewController {
             roundView.center = CGPoint(x: CGFloat(i * Int(self.view.frame.width)) + self.view.center.x, y: self.scroll_view.center.y)
             roundView.makeRound()
             roundView.backgroundColor = UIColor(named: "primary-red")
-            
-            let waveImg = UIImage(named: "wave-image")
-            let newWidth = self.view.frame.size.width*3/4
-            let newHeight = newWidth * (waveImg?.size.height ?? 0) / (waveImg?.size.width ?? 0)
-            
-            let wave1 = UIImageView()
-            wave1.frame = CGRect(x: 0 , y: 0 , width: newWidth , height: newHeight)
-            wave1.center = CGPoint(x: 0, y: self.view.frame.height*5/10)
-            wave1.clipsToBounds = true
-            wave1.contentMode = UIView.ContentMode.scaleAspectFill
-            wave1.image = waveImg
-            
-            let wave2 = UIImageView()
-            wave2.frame = CGRect(x: 0 , y: 0 , width: newWidth , height: newHeight)
-            wave2.center = CGPoint(x: self.view.frame.width, y: self.view.frame.height*2/10)
-            wave2.clipsToBounds = true
-            wave2.contentMode = UIView.ContentMode.scaleAspectFill
-            wave2.image = waveImg
-            
-            let wave3 = UIImageView()
-            wave3.frame = CGRect(x: 0 , y: 0 , width: newWidth , height: newHeight)
-            wave3.center = CGPoint(x: self.view.frame.width*2, y: self.view.frame.height*5/10)
-            wave3.clipsToBounds = true
-            wave3.contentMode = UIView.ContentMode.scaleAspectFill
-            wave3.image = waveImg
-            
-            let wave4 = UIImageView()
-            wave4.frame = CGRect(x: 0 , y: 0 , width: newWidth , height: newHeight)
-            wave4.center = CGPoint(x: self.view.frame.width*3, y: self.view.frame.height*2/10)
-            wave4.clipsToBounds = true
-            wave4.contentMode = UIView.ContentMode.scaleAspectFill
-            wave4.image = waveImg
-            
-            var itemSize = "Kazarov\nDelivery".getItemSize(font: UIFont(name: "OpenSans-SemiBold", size: 14) ?? UIFont.preferredFont(forTextStyle: .largeTitle))
-            
-            let infoLabel = UILabel(frame: CGRect(x: 0, y: 0, width: itemSize.width, height: itemSize.height))
-            infoLabel.center = CGPoint(x: roundView.center.x, y: roundView.frame.origin.y - 40)
-            infoLabel.font = UIFont(name: "OpenSans-SemiBold", size: 14)
-            infoLabel.textAlignment = .center
-            infoLabel.textColor = .white
-            infoLabel.numberOfLines = 2
-            infoLabel.text = "Kazarov\nDelivery"
-            
-            itemSize = mainTitleArray[i].getItemSize(font: UIFont(name: "OpenSans-Bold", size: 40) ?? UIFont.preferredFont(forTextStyle: .largeTitle))
-            
-            let label = UILabel(frame: CGRect(x: 0, y: 0, width: itemSize.width, height: itemSize.height))
-            label.center = CGPoint(x: roundView.center.x, y: roundView.center.y)
-            label.font = UIFont(name: "OpenSans-Bold", size: 40)
-            label.textAlignment = .center
-            label.textColor = .white
-            label.numberOfLines = 2
-            label.text = mainTitleArray[i]
-            label.setLineHeight(lineHeight: 0.7)
-            
-            itemSize = miniTitleArray[i].getItemSize(font: UIFont(name: "OpenSans-Regular", size: 12) ?? UIFont.preferredFont(forTextStyle: .largeTitle))
-            
-            let label1 = UILabel(frame: CGRect(x: 0, y: 0, width: itemSize.width, height: itemSize.height))
-            label1.center = CGPoint(x: roundView.center.x, y: label.frame.origin.y + label.frame.height)
-            label1.font = UIFont(name: "OpenSans-Regular", size: 12)
-            label1.textAlignment = .center
-            label1.textColor = .white
-            label1.numberOfLines = 1
-            label1.text = miniTitleArray[i]
 
+            let mainLabel = createLabel(text: mainTitleArray[i], font: UIFont(name: "OpenSans-Bold", size: 40)!, centerPoint: CGPoint(x: roundView.center.x, y: roundView.center.y))
+            mainLabel.setLineHeight(lineHeight: 0.7)
+            
             self.scroll_view.addSubview(imageView)
             self.scroll_view.addSubview(roundView)
-            self.scroll_view.addSubview(wave1)
-            self.scroll_view.addSubview(wave2)
-            self.scroll_view.addSubview(wave3)
-            self.scroll_view.addSubview(wave4)
-            self.scroll_view.addSubview(infoLabel)
-            self.scroll_view.addSubview(label)
-            self.scroll_view.addSubview(label1)
+            self.scroll_view.addSubview(createWaveImage(centerPoint: CGPoint(x: 0, y: self.view.frame.height*5/10)))
+            self.scroll_view.addSubview(createWaveImage(centerPoint: CGPoint(x: self.view.frame.width, y: self.view.frame.height*2/10)))
+            self.scroll_view.addSubview(createWaveImage(centerPoint: CGPoint(x: self.view.frame.width*2, y: self.view.frame.height*5/10)))
+            self.scroll_view.addSubview(createWaveImage(centerPoint: CGPoint(x: self.view.frame.width*3, y: self.view.frame.height*2/10)))
+            self.scroll_view.addSubview(createLabel(text: "Kazarov\nDelivery", font: UIFont(name: "OpenSans-SemiBold", size: 14)!, centerPoint: CGPoint(x: roundView.center.x, y: roundView.frame.origin.y - 40)))
+            self.scroll_view.addSubview(mainLabel)
+            self.scroll_view.addSubview(createLabel(text: miniTitleArray[i], font: UIFont(name: "OpenSans-Regular", size: 12)!, centerPoint: CGPoint(x: roundView.center.x, y: mainLabel.frame.origin.y + mainLabel.frame.height)))
 
         }
                 
@@ -408,5 +346,34 @@ extension HomeViewController {
         
         spicyFilterOn = false
         veganFilterOn = false
+    }
+    
+    func createWaveImage(centerPoint: CGPoint) -> UIImageView {
+        let waveImg = UIImage(named: "wave-image")
+        let newWidth = self.view.frame.size.width*3/4
+        let newHeight = newWidth * (waveImg?.size.height ?? 0) / (waveImg?.size.width ?? 0)
+        
+        let wave1 = UIImageView()
+        wave1.frame = CGRect(x: 0 , y: 0 , width: newWidth , height: newHeight)
+        wave1.center = centerPoint
+        wave1.clipsToBounds = true
+        wave1.contentMode = UIView.ContentMode.scaleAspectFill
+        wave1.image = waveImg
+        
+        return wave1
+    }
+    
+    func createLabel(text: String, font: UIFont, centerPoint: CGPoint) -> UILabel {
+        let itemSize = text.getItemSize(font: font)
+        
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: itemSize.width, height: itemSize.height))
+        label.center = centerPoint
+        label.font = font
+        label.textAlignment = .center
+        label.textColor = .white
+        label.numberOfLines = 0
+        label.text = text
+        
+        return label
     }
 }
